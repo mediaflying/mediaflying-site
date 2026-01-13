@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional YouTube Video Promotion and Channel Growth Services by Mediaflying. Ad-based distribution and real audience targeting.">
+    <title>Mediaflying - Professional YouTube Marketing</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* --- CSS VARIABLES & RESET --- */
+        :root {
+            --primary-blue: #0B1E3D; /* Brand Dark Blue */
+            --secondary-blue: #162a52;
+            --brand-orange: #FF6B00; /* CTA Color */
+            --brand-orange-hover: #e55e00;
+            --text-dark: #333333;
+            --text-light: #f4f4f4;
+            --whatsapp-green: #25D366;
+            --white: #ffffff;
+            --light-gray: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+        }
+
+        a { text-decoration: none; }
+        ul { list-style: none; }
+
+        /* --- UTILITIES --- */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .section-padding {
+            padding: 60px 0;
+        }
+
+        .text-center { text-align: center; }
+        .text-orange { color: var(--brand-orange); }
+        .bg-light { background-color: var(--light-gray); }
+
+        /* --- BUTTONS --- */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--brand-orange);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--brand-orange-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--white);
+            color: var(--white);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--primary-blue);
+        }
+
+        .btn-full-width {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+
+        /* --- HEADER --- */
+        header {
+            background-color: var(--primary-blue);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .logo span { color: var(--brand-orange); }
+
+        .desktop-nav a {
+            color: var(--white);
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .desktop-nav { display: none; }
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            background: linear-gradient(rgba(11, 30, 61, 0.9), rgba(11, 30, 61, 0.9)), url('https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 100px 0 80px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 768px) {
+            .hero h1 { font-size: 3.5rem; }
+            .hero-buttons { flex-direction: row; max-width: none; justify-content: center; }
+        }
+
+        /* --- TRUST BADGES --- */
+        .trust-badges {
+            background: var(--secondary-blue);
+            color: var(--white);
+            padding: 20px 0;
+        }
+
+        .badge-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .badge-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .badge-item i { color: var(--brand-orange); }
+
+        /* --- SERVICES --- */
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+
+        .section-title p { color: #666; }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            text-align: center;
+            border: 1px solid #eee;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover { transform: translateY(-5px); }
+
+        .service-icon {
+            font-size: 40px;
+            color: var(--brand-orange);
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary-blue);
+        }
+
+        /* --- PRICING --- */
+        .pricing-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .pricing-card {
+            background: var(--white);
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 30px 20px;
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .pricing-card.popular {
+            border: 2px solid var(--brand-orange);
+            transform: scale(1.05);
+            z-index: 2;
+        }
+
+        .popular-badge {
+            background: var(--brand-orange);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-transform: uppercase;
+        }
+
+        .plan-name {
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+        }
+
+        .plan-price {
+            font-size: 2rem;
+            color: var(--brand-orange);
+            font-weight: 700;
+            margin: 15px 0;
+        }
+
+        .plan-features {
+            margin-bottom: 25px;
+            text-align: left;
+            padding-left: 15px;
+        }
+
+        .plan-features li {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .plan-features li i { color: var(--brand-orange); }
+
+        .disclaimer {
+            font-size: 0.75rem;
+            color: #777;
+            text-align: center;
+            margin-top: 30px;
+            font-style: italic;
+            padding: 0 20px;
+        }
+
+        /* --- MONETIZATION --- */
+        .monetization-section {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+
+        .monetization-section h2 { color: var(--white); }
+        .monetization-section p { color: #ccc; }
+
+        .monetization-card {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: var(--white);
+        }
+
+        .monetization-card .plan-name { color: var(--white); }
+        .monetization-card .plan-features li i { color: var(--brand-orange); }
+
+        /* --- WHY CHOOSE US --- */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            align-items: center;
+        }
+
+        .why-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .why-list i {
+            background: var(--brand-orange);
+            color: white;
+            padding: 8px;
+            border-radius: 50%;
+            font-size: 14px;
+        }
+
+        /* --- TESTIMONIALS --- */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--brand-orange);
+        }
+
+        .testimonial-text { font-style: italic; color: #555; margin-bottom: 15px; }
+        .client-name { font-weight: 700; color: var(--primary-blue); }
+
+        /* --- CONTACT --- */
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .contact-info-box h3 { margin-bottom: 20px; color: var(--primary-blue); }
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+        .info-item i {
+            color: var(--brand-orange);
+            font-size: 20px;
+            width: 25px;
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .form-group { margin-bottom: 15px; }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        .form-group textarea { height: 100px; resize: none; }
+
+        /* --- FOOTER --- */
+        footer {
+            background: var(--primary-blue);
+            color: #ccc;
+            padding: 40px 0 100px; /* Extra bottom padding for floating buttons */
+            font-size: 0.9rem;
+        }
+        footer p { margin-bottom: 10px; }
+        footer strong { color: var(--white); }
+
+        /* --- FLOATING BUTTONS --- */
+        .floating-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .float-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .float-whatsapp { background-color: var(--whatsapp-green); }
+        .float-call { background-color: var(--primary-blue); display: none; } /* Show call on mobile only typically */
+
+        .float-btn:hover { transform: scale(1.1); }
+
+        /* Sticky Mobile Footer */
+        .mobile-sticky-footer {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            z-index: 999;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-sticky-footer { display: flex; gap: 10px; }
+            .mobile-sticky-footer .btn { flex: 1; padding: 10px; font-size: 12px; display: flex; align-items: center; justify-content: center; gap: 5px; }
+            .btn-wa { background-color: var(--whatsapp-green); color: white; }
+            .btn-call { background-color: var(--primary-blue); color: white; }
+            footer { padding-bottom: 80px; } /* Ensure footer content isn't hidden behind sticky bar */
+            .floating-buttons { display: none; } /* Hide circles on mobile, use bar instead */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Media<span>flying</span></div>
+            <nav class="desktop-nav">
+                <a href="#services">Services</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#monetization">Monetization</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="https://wa.me/917983020338" class="btn btn-primary" style="padding: 8px 20px; font-size: 12px;">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Grow Your YouTube Channel <br><span class="text-orange">With Real Audience</span></h1>
+            <p>Ad-driven promotion strategies to boost your views, subscribers, and monetization organically. No bots, just results.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/917983020338?text=Hi%20Mediaflying,%20I%20want%20to%20grow%20my%20YouTube%20channel." class="btn btn-primary"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                <a href="#pricing" class="btn btn-outline">View Plans</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <div class="trust-badges">
+        <div class="container badge-grid">
+            <div class="badge-item"><i class="fas fa-check-circle"></i> 100% Safe & Ad-Friendly</div>
+            <div class="badge-item"><i class="fas fa-users"></i> Real Audience</div>
+            <div class="badge-item"><i class="fas fa-lock"></i> No Password Required</div>
+            <div class="badge-item"><i class="fas fa-bolt"></i> Fast Campaign Start</div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Strategic YouTube marketing solutions tailored for growth.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fab fa-youtube service-icon"></i>
+                    <h3>Video Promotion</h3>
+                    <p>We use Google Ads and partner networks to put your video in front of interested viewers.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line service-icon"></i>
+                    <h3>Views Growth</h3>
+                    <p>Increase your video metrics organically with audience targeting based on your niche.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-dollar-sign service-icon"></i>
+                    <h3>Monetization Aid</h3>
+                    <p>Strategic campaigns designed to help you hit the 4K Watch Hours & 1K Subscriber milestones.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-user-plus service-icon"></i>
+                    <h3>Channel Growth</h3>
+                    <p>Comprehensive strategies to turn casual viewers into loyal subscribers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Organic Growth Plans</h2>
+                <p>Choose the campaign budget that fits your goals.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Starter -->
+                <div class="pricing-card">
+                    <div class="plan-name">Starter Growth</div>
+                    <div class="plan-price">₹800</div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 5,000+ Audience Reach</li>
+                        <li><i class="fas fa-check"></i> Views, Likes & Subs Growth</li>
+                        <li><i class="fas fa-check"></i> Basic Targeting</li>
+                        <li><i class="fas fa-check"></i> 24/7 Support</li>
+                    </ul>
+                    <a href="https://wa.me/917983020338?text=I%20am%20interested%20in%20Starter%20Growth%20Plan" class="btn btn-primary btn-full-width">Choose Plan</a>
+                </div>
+
+                <!-- Boost -->
+                <div class="pricing-card">
+                    <div class="plan-name">Boost Growth</div>
+                    <div class="plan-price">₹1,500</div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 10,000+ Audience Reach</li>
+                        <li><i class="fas fa-check"></i> Enhanced Engagement</li>
+                        <li><i class="fas fa-check"></i> Niche Targeting</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                    </ul>
+                    <a href="https://wa.me/917983020338?text=I%20am%20interested%20in%20Boost%20Growth%20Plan" class="btn btn-primary btn-full-width">Choose Plan</a>
+                </div>
+
+                <!-- Pro -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="plan-name">Pro Growth</div>
+                    <div class="plan-price">₹2,800</div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 20,000+ Audience Reach</li>
+                        <li><i class="fas fa-check"></i> High Retention Views</li>
+                        <li><i class="fas fa-check"></i> Advanced Ad Optimization</li>
+                        <li><i class="fas fa-check"></i> Dedicated Manager</li>
+                    </ul>
+                    <a href="https://wa.me/917983020338?text=I%20am%20interested%20in%20Pro%20Growth%20Plan" class="btn btn-primary btn-full-width">Choose Plan</a>
+                </div>
+
+                <!-- Elite -->
+                <div class="pricing-card">
+                    <div class="plan-name">Elite Growth</div>
+                    <div class="plan-price">₹6,500</div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 50,000+ Audience Reach</li>
+                        <li><i class="fas fa-check"></i> Massive Exposure</li>
+                        <li><i class="fas fa-check"></i> Rapid Growth Strategy</li>
+                        <li><i class="fas fa-check"></i> Full Analytics</li>
+                    </ul>
+                    <a href="https://wa.me/917983020338?text=I%20am%20interested%20in%20Elite%20Growth%20Plan" class="btn btn-primary btn-full-width">Choose Plan</a>
+                </div>
+                
+                 <!-- Viral -->
+                 <div class="pricing-card">
+                    <div class="plan-name">Viral Growth</div>
+                    <div class="plan-price">₹11,000</div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 100,000+ Audience Reach</li>
+                        <li><i class="fas fa-check"></i> Maximum Velocity</li>
+                        <li><i class="fas fa-check"></i> Premium Ad Slots</li>
+                        <li><i class="fas fa-check"></i> VIP Support</li>
+                    </ul>
+                    <a href="https://wa.me/917983020338?text=I%20am%20interested%20in%20Viral%20Growth%20Plan" class="btn btn-primary btn-full-width">Choose Plan</a>
+                </div>
+            </div>
+
+            <div class="disclaimer">
+                *Results depend on content quality and audience targeting. We use ethical, Google-Ads compliant, and ad-friendly promotion methods. No bots are used.
+            </div>
+        </div>
+    </section>
+
+    <!-- Monetization Section -->
+    <section id="monetization" class="section-padding monetization-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Monetization Packages</h2>
+                <p>Achieve YPP requirements through smart promotion.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card monetization-card">
+                    <div class="plan-name">Subscribers Campaign</div>
+                    <div class="plan-price">₹5,000</div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Target: 1,000 Subscribers</li>
+                        <li><i class="fas fa-check"></i> Real Audience Ads</li>
+                        <li><i class="fas fa-check"></i> Safe Delivery</li>
+                    </ul>
+                    <a href="https://wa.me/917983020338?text=Interested%20in%201K%20Subs%20Package" class="btn btn-primary btn-full-width">Get Started</a>
+                </div>
+
+                <div class="pricing-card monetization-card">
+                    <div class="plan-name">Watch Hours Campaign</div>
+                    <div class="plan-price">₹10,000</div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Target: 4,000 Watch Hours</li>
+                        <li><i class="fas fa-check"></i> High Retention Videos</li>
+                        <li><i class="fas fa-check"></i> Ad-Driven Traffic</li>
+                    </ul>
+                    <a href="https://wa.me/917983020338?text=Interested%20in%204K%20Watch%20Hours%20Package" class="btn btn-primary btn-full-width">Get Started</a>
+                </div>
+
+                <div class="pricing-card monetization-card popular">
+                    <div class="popular-badge">Complete Pack</div>
+                    <div class="plan-name">Full Monetization</div>
+                    <div class="plan-price">₹12,000</div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 1k Subs + 4k Hours</li>
+                        <li><i class="fas fa-check"></i> Complete Channel Audit</li>
+                        <li><i class="fas fa-check"></i> Growth Strategy</li>
+                    </ul>
+                    <a href="https://wa.me/917983020338?text=Interested%20in%20Full%20Monetization%20Package" class="btn btn-primary btn-full-width">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Mediaflying?</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-text">
+                    <ul class="why-list">
+                        <li><i class="fas fa-check"></i> <strong>Ad-Based Promotion:</strong> We leverage legitimate ad networks to distribute your content.</li>
+                        <li><i class="fas fa-check"></i> <strong>Algorithm Friendly:</strong> Our methods signal positive engagement to the YouTube algorithm.</li>
+                        <li><i class="fas fa-check"></i> <strong>Affordable Pricing:</strong> Best market rates for real, organic reach.</li>
+                        <li><i class="fas fa-check"></i> <strong>24/7 Support:</strong> Our team is available on WhatsApp anytime to assist you.</li>
+                    </ul>
+                </div>
+                <div class="why-image text-center">
+                    <i class="fas fa-rocket" style="font-size: 150px; color: var(--primary-blue); opacity: 0.1;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Success Stories</h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I was struggling to get past 500 subs. Mediaflying's Pro plan got me monetized in just 2 months. The traffic was real and comments were genuine."</p>
+                    <p class="client-name">- Rahul V., Tech Reviewer</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Best service for watch hours. I tried other panels but they were bots. These guys actually run ads. My analytics proved it."</p>
+                    <p class="client-name">- Priya S., Vlogger</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Professional team and fast response on WhatsApp. Helped me understand how to position my videos better."</p>
+                    <p class="client-name">- Amit K., Gamer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Ready to start your campaign? Contact us today.</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info-box">
+                    <h3>Contact Info</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>A-5 Maruti Building, Sanjay Palace, Agra 282004</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:themediaflying@gmail.com" style="color: inherit;">themediaflying@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/917983020338" style="color: inherit;">+91 7983020338</a>
+                    </div>
+                    
+                    <div style="margin-top: 30px;">
+                        <a href="tel:+917983020338" class="btn btn-outline" style="border-color: var(--primary-blue); color: var(--primary-blue);">Call Now</a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form action="mailto:themediaflying@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="whatsapp" placeholder="WhatsApp Number" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Tell us about your channel goals..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full-width">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="logo" style="margin-bottom: 20px;">Media<span>flying</span></div>
+            <p><strong>Mediaflying</strong> - Premier YouTube Marketing Agency</p>
+            <p>A-5 Maruti Building, Sanjay Palace, Agra 282004</p>
+            <p style="font-size: 12px; margin-top: 20px; opacity: 0.6;">&copy; 2024 Mediaflying. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Desktop Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/917983020338?text=Hi%20Mediaflying" class="float-btn float-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Mobile Sticky Footer -->
+    <div class="mobile-sticky-footer">
+        <a href="tel:+917983020338" class="btn btn-call">
+            <i class="fas fa-phone-alt"></i> Call Now
+        </a>
+        <a href="https://wa.me/917983020338?text=Hi%20Mediaflying" class="btn btn-wa">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+    </div>
+
+</body>
+</html>
